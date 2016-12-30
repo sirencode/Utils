@@ -1,4 +1,7 @@
-package com.util.diablo.utils.rsa;
+package com.util.diablo.utils.encryption.algorithm.rsa;
+
+
+import com.util.diablo.utils.encryption.algorithm.Base64Utils;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -226,7 +229,6 @@ public final class RSAUtils {
     /**
      * 从文件中加载私钥
      *
-     * @return 是否成功
      * @throws Exception
      */
     public static PrivateKey loadPrivateKey(InputStream in) throws Exception {

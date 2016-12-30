@@ -1,8 +1,9 @@
-package com.util.diablo.utils.rsa;
+package com.util.diablo.utils.encryption.algorithm;
 
 import java.io.UnsupportedEncodingException;
 
-
+/**
+ */
 public class Base64Utils {
     private static char[] base64EncodeChars = new char[]
             {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T',
@@ -18,6 +19,8 @@ public class Base64Utils {
                     -1, -1, -1};
 
     /**
+     * 加密
+     *
      * @param data
      * @return
      */
@@ -52,6 +55,7 @@ public class Base64Utils {
     }
 
     /**
+     * 解密
      *
      * @param str
      * @return

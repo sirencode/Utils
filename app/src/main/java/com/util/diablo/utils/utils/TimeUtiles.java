@@ -1,4 +1,4 @@
-package com.util.diablo.utils;
+package com.util.diablo.utils.utils;
 
 import android.text.format.Time;
 

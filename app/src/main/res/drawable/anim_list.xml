@@ -3,26 +3,26 @@
     android:oneshot="false">
     <item
         android:drawable="@mipmap/baozaifan"
-        android:duration="100" />
+        android:duration="10" />
     <item
         android:drawable="@mipmap/caifan"
-        android:duration="100" />
+        android:duration="10" />
     <item
         android:drawable="@mipmap/guogaimian"
-        android:duration="100" />
+        android:duration="10" />
     <item
         android:drawable="@mipmap/huimian"
-        android:duration="100" />
+        android:duration="10" />
     <item
         android:drawable="@mipmap/jiaozi"
-        android:duration="100" />
+        android:duration="10" />
     <item
         android:drawable="@mipmap/lanliao"
-        android:duration="100" />
+        android:duration="10" />
     <item
         android:drawable="@mipmap/luroufan"
-        android:duration="100" />
+        android:duration="10" />
     <item
         android:drawable="@mipmap/malatang"
-        android:duration="100" />
+        android:duration="10" />
 </animation-list>

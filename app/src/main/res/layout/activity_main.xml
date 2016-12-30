@@ -1,53 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/activity_main"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <Button
-        android:text="RSA加密"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/rsa_encode"
-        android:layout_alignBaseline="@+id/rsa_decode"
-        android:layout_alignBottom="@+id/rsa_decode"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginRight="34dp"
-        android:layout_marginEnd="34dp" />
-
-    <Button
-        android:text="RSA解密"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/rsa_decode"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <TextView
-        android:text="animation text"
-        android:textSize="20dp"
-        android:background="#ccc"
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="加密方式:RSA"
+        android:textColor="@android:color/black"
+        android:textSize="20dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/rsa_decode"
-        android:layout_toRightOf="@+id/rsa_decode"
-        android:layout_toEndOf="@+id/rsa_decode"
-        android:layout_marginLeft="47dp"
-        android:layout_marginStart="47dp"
-        android:layout_marginTop="74dp"
-        android:id="@+id/textView" />
+        android:contentDescription="加密方式">
+
+        <RadioButton
+            android:id="@+id/radioRSA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="RSA" />
+
+        <RadioButton
+            android:id="@+id/radioAES"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AES" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="加密内容"
+        android:inputType="textPersonName" />
 
     <Button
-        android:text="start anim"
-        android:layout_width="wrap_content"
+        android:id="@+id/btn_encode"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView"
-        android:layout_toRightOf="@+id/rsa_decode"
-        android:layout_toEndOf="@+id/rsa_decode"
-        android:layout_marginLeft="34dp"
-        android:layout_marginStart="34dp"
-        android:layout_marginTop="69dp"
-        android:id="@+id/start" />
-</RelativeLayout>
+        android:text="加密" />
+
+    <Button
+        android:id="@+id/btn_decode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="解密" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="加解密后内容："
+        android:textColor="@android:color/black"
+        android:textSize="20dp" />
+
+</LinearLayout>
